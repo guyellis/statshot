@@ -1,6 +1,6 @@
 {
   "name": "statshot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Guy Ellis <wildfiction@gmail.com>",
   "description": "Take snapshots of a statistic from a JSON API",
   "bin": {
