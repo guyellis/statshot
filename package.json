@@ -1,6 +1,6 @@
 {
   "name": "statshot",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Guy Ellis <wildfiction@gmail.com>",
   "description": "Take snapshots of a statistic from a JSON API",
   "bin": {
@@ -43,11 +43,12 @@
   },
   "devDependencies": {
     "chai": "^2.3.0",
-    "eslint": "^0.20.0",
+    "eslint": "^0.21.1",
     "istanbul": "^0.3.13",
     "mocha": "^2.2.4",
     "npm-update-outdated": "^0.1.4",
-    "pre-commit": "^1.0.6"
+    "pre-commit": "^1.0.6",
+    "sinon": "^1.14.1"
   },
   "keywords": [
     "snapshots",
