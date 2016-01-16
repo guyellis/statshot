@@ -1,26 +1,40 @@
 {
-  "name": "statshot",
-  "version": "0.0.5",
   "author": "Guy Ellis <wildfiction@gmail.com>",
-  "description": "Take snapshots of a statistic from a JSON API",
   "bin": {
     "statshot": "./bin/statshot.js"
   },
+  "bugs": {
+    "url": "https://github.com/guyellis/statshot/issues"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash": "^4.0.0",
+    "minimist": "^1.1.1",
+    "randomstring": "^1.0.5",
+    "request": "^2.55.0"
+  },
+  "description": "Take snapshots of a statistic from a JSON API",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.0.0",
+    "eslint-config-guyellis": "^0.0.4",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.2.4",
+    "npm-update-outdated": "^0.1.4",
+    "pre-commit": "^1.0.6",
+    "sinon": "^1.14.1"
+  },
+  "engines": {
+    "node": ">=5.0"
+  },
+  "homepage": "https://github.com/guyellis/statshot#readme",
+  "keywords": [
+    "snapshots",
+    "stats"
+  ],
+  "license": "MIT",
   "main": "./bin/statshot.js",
-  "public": true,
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
-  },
-  "scripts": {
-    "pre-commit-update": "node_modules/.bin/npm-update-outdated",
-    "test": "node_modules/.bin/mocha --recursive",
-    "posttest": "node_modules/.bin/eslint .",
-    "lint": "node_modules/.bin/eslint .",
-    "check-coverage": "node_modules/.bin/istanbul check-coverage --statements 1 --branches 1 --functions 1 --lines 1 ./coverage/coverage.json",
-    "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
-    "pre-commit-stash-save": "git stash --keep-index",
-    "post-commit-stash-pop": "git stash pop"
-  },
+  "name": "statshot",
   "pre-commit": [
     "pre-commit-update",
     "lint",
@@ -29,36 +43,23 @@
     "post-commit-stash-pop",
     "check-coverage"
   ],
+  "public": true,
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guyellis/statshot.git"
   },
-  "dependencies": {
-    "debug": "^2.2.0",
-    "lodash": "^3.9.1",
-    "minimist": "^1.1.1",
-    "randomstring": "^1.0.5",
-    "request": "^2.55.0"
+  "scripts": {
+    "check-coverage": "node_modules/.bin/istanbul check-coverage --statements 1 --branches 1 --functions 1 --lines 1 ./coverage/coverage.json",
+    "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+    "lint": "node_modules/.bin/eslint .",
+    "post-commit-stash-pop": "git stash pop",
+    "posttest": "node_modules/.bin/eslint .",
+    "pre-commit-stash-save": "git stash --keep-index",
+    "pre-commit-update": "node_modules/.bin/npm-update-outdated",
+    "test": "node_modules/.bin/mocha --recursive"
   },
-  "devDependencies": {
-    "chai": "^2.3.0",
-    "eslint": "^0.21.1",
-    "istanbul": "^0.3.13",
-    "mocha": "^2.2.4",
-    "npm-update-outdated": "^0.1.4",
-    "pre-commit": "^1.0.6",
-    "sinon": "^1.14.1"
-  },
-  "keywords": [
-    "snapshots",
-    "stats"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/guyellis/statshot/issues"
-  },
-  "homepage": "https://github.com/guyellis/statshot#readme",
-  "engines": {
-    "node": ">=0.10"
-  }
+  "version": "0.0.5"
 }
