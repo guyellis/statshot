@@ -16,13 +16,13 @@
   "description": "Take snapshots of a statistic from a JSON API",
   "devDependencies": {
     "chai": "^3.4.1",
-    "eslint": "^1.0.0",
-    "eslint-config-guyellis": "^0.0.4",
+    "eslint": "^3.19.0",
+    "eslint-config-guyellis": "^0.0.6",
     "istanbul": "^0.4.2",
-    "mocha": "^2.2.4",
+    "mocha": "^3.3.0",
     "npm-update-outdated": "^0.1.4",
     "pre-commit": "^1.0.6",
-    "sinon": "^1.14.1"
+    "sinon": "^2.1.0"
   },
   "engines": {
     "node": ">=5.0"
