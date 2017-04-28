@@ -1,4 +1,6 @@
 # statshot
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/guyellis/statshot.svg)](https://greenkeeper.io/)
 Take snapshots of stats from a JSON API
 
 [![Code Climate](https://codeclimate.com/github/guyellis/statshot/badges/gpa.svg)](https://codeclimate.com/github/guyellis/statshot)
