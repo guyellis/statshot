@@ -55,11 +55,12 @@
     "check-coverage": "node_modules/.bin/istanbul check-coverage --statements 1 --branches 1 --functions 1 --lines 1 ./coverage/coverage.json",
     "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "lint": "node_modules/.bin/eslint .",
+    "mocha": "node_modules/.bin/mocha --recursive",
     "post-commit-stash-pop": "git stash pop",
     "posttest": "node_modules/.bin/eslint .",
     "pre-commit-stash-save": "git stash --keep-index",
     "pre-commit-update": "node_modules/.bin/npm-update-outdated",
-    "test": "node_modules/.bin/mocha --recursive"
+    "test": "npm run lint && npm run mocha"
   },
   "version": "1.0.0"
 }
