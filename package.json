@@ -15,7 +15,7 @@
   },
   "description": "Take snapshots of a statistic from a JSON API",
   "devDependencies": {
-    "chai": "^3.4.1",
+    "chai": "^4.0.2",
     "eslint": "^3.19.0",
     "eslint-config-guyellis": "^0.0.6",
     "istanbul": "^0.4.2",
