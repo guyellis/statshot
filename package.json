@@ -19,7 +19,7 @@
     "eslint": "^4.1.0",
     "eslint-config-guyellis": "^0.0.6",
     "istanbul": "^0.4.2",
-    "mocha": "^3.3.0",
+    "mocha": "3.5.0",
     "npm-update-outdated": "^0.1.4",
     "pre-commit": "^1.0.6",
     "sinon": "^3.0.0"

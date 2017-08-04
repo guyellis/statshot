@@ -10,7 +10,7 @@ chai.should();
 describe('Help', function(){
 
   it('should print a help message', function(done){
-    var stub = sinon.stub(console, 'log', function(message){
+    var stub = sinon.stub(console, 'log').callsFake(function(message){
       message.should.contain('--help');
       stub.restore();
       done();
