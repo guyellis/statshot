@@ -22,7 +22,7 @@
     "mocha": "6.0.2",
     "npm-update-outdated": "0.1.6",
     "pre-commit": "1.2.2",
-    "sinon": "7.2.6"
+    "sinon": "7.2.7"
   },
   "engines": {
     "node": ">=8",
